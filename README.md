@@ -2,6 +2,11 @@
 
 A responsive React application that helps users discover new activities and make the most of their free time.
 
+## 🌐 Live Demo
+
+[View My Favorite Recipes](https://my-favrecipes-react.netlify.app/)
+
+
 ## ✨ Features
 
 - Random activity suggestions
