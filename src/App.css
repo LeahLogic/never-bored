@@ -1,0 +1,276 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        radial-gradient(circle at 10% 30%, #E2D8FF 0%, transparent 30%),
+        radial-gradient(circle at 90% 65%, #FFE6C7 0%, transparent 30%),
+        #F7F5FC;
+}
+
+.header {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.logo span {
+    color: #7950D9;
+}
+
+.header-text {
+    color: #77718A;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px 50px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.subtitle {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #7950D9;
+}
+
+h1 {
+    font-size: clamp(45px, 7vw, 85px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -4px;
+    margin: 20px 0;
+}
+
+h1 span {
+    color: #7950D9;
+}
+
+.intro p {
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #77718A;
+}
+
+.activity-card {
+    width: 100%;
+    max-width: 650px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAE5F4;
+    border-radius: 32px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(72, 48, 120, 0.09);
+}
+
+.activity-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 22px;
+    background-color: #FFF0C9;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    transform: rotate(-8deg);
+}
+
+.card-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #7950D9;
+}
+
+.activity-card h2 {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 15px 0 25px;
+    letter-spacing: -0.8px;
+}
+
+.activity-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px 8px;
+    background-color: #F4F0FC;
+    border-radius: 18px;
+}
+
+.info-item:nth-child(2) {
+    background-color: #FFF3DF;
+}
+
+.info-item:nth-child(3) {
+    background-color: #E6F5EB;
+}
+
+.info-icon {
+    font-size: 23px;
+}
+
+.info-label {
+    font-size: 11px;
+    color: #77718A;
+}
+
+.info-value {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.activity-btn {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 16px;
+    background-color: #7950D9;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.activity-btn:hover {
+    background-color: #6339C1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(121, 80, 217, 0.25);
+}
+
+.activity-btn:active {
+    transform: translateY(0);
+}
+
+.activity-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+.bottom-text {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #77718A;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 60px;
+    font-size: 11px;
+    color: #77718A;
+}
+
+.footer a {
+    color: #7950D9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 25px 20px;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .main {
+        padding: 25px 15px 35px;
+    }
+
+    h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .intro p {
+        font-size: 13px;
+    }
+
+    .activity-card {
+        padding: 25px 18px;
+        border-radius: 24px;
+    }
+
+    .activity-card h2 {
+        font-size: 24px;
+    }
+
+    .activity-info {
+        gap: 8px;
+    }
+
+    .info-item {
+        padding: 15px 5px;
+    }
+
+    .info-value {
+        font-size: 12px;
+    }
+
+    .info-label {
+        font-size: 10px;
+    }
+
+    .activity-btn {
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 20px;
+    }
+}
